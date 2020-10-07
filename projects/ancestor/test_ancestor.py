@@ -1,6 +1,5 @@
 import unittest
-from ancestor import earliest_ancestor
-
+from ancestor import Queue, Graph, earliest_ancestor
 class Test(unittest.TestCase):
 
     '''
