@@ -113,7 +113,7 @@ def earliest_ancestor(ancestors, starting_node):
         path = q.dequeue()
         v = path[-1]
         # If the path is longer or equal and the value is smaller, or if the path is longer)
-        if (len(path) >= max_path_len and v < earliest_ancestor) or (len(path) > max_path_len):
+        if (len(path) == max_path_len and v < earliest_ancestor) or (len(path) > max_path_len):
             earliest_ancestor = v
             max_path_len = len(path)
         for neighbor in graph.vertices[v]:
